@@ -1,0 +1,41 @@
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinner</title>
+    <link href="assets/public/css/style.css" rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'"
+        media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
+    <script src="assets/public/js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="pin-container" id="pin-container">
+        <div class="pin-text">
+        </div>
+    </div>
+    <div id="output">
+
+    </div>
+    <div class="fix-container">
+        <div class="fix-item">
+            <label for="text" id="text">Yazı:</label>
+            <input type="text" id="inputText" name="text" onkeyup="textInput()" />
+            <label for="bgColor" id="bgColorLabel">Arka Plan:</label>
+            <input type="color" id="bgColorInput" name="bgcolor" />
+            <label for="textColor" id="textColorLabel">Yazı Rengi:</label>
+            <input type="color" id="textColorInput" name="bgcolor" />
+            <div id="download" onclick="download()">İNDİR</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
